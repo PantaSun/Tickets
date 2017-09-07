@@ -1,0 +1,231 @@
+[ 2016-07-18T11:29:54+08:00 ] ::1 /Tickets/Index.php/resources/images/loading.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001264s ]
+
+[ 2016-07-18T11:29:54+08:00 ] ::1 /Tickets/Index.php/resources/images/closelabel.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001255s ]
+
+[ 2016-07-18T11:30:05+08:00 ] ::1 /Tickets/Application/Admin/Common/Resources/images/icons/weblogo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002014s ]
+
+[ 2016-07-18T18:58:08+08:00 ] ::1 /Tickets/Index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000812s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000937s ]
+
+[ 2016-07-18T18:58:10+08:00 ] ::1 /Tickets/Index.php/Index/loginCheck.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+NOTIC: [8] Use of undefined constant GPC - assumed 'GPC' C:\wamp\www\Tickets\Application\Common\Common\function.php 第 58 行.
+NOTIC: [8] Use of undefined constant GPC - assumed 'GPC' C:\wamp\www\Tickets\Application\Common\Common\function.php 第 58 行.
+SQL: SHOW COLUMNS FROM `t_user` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `t_user` WHERE ( user_name='sunsky1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `t_shop` WHERE ( shop_name='闪电特攻' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000878s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001425s ]
+
+[ 2016-07-18T18:58:11+08:00 ] ::1 /Tickets/Index.php/Show/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+NOTIC: [8] Use of undefined constant GPC - assumed 'GPC' C:\wamp\www\Tickets\Application\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: tody C:\wamp\www\Tickets\Application\Home\Controller\ShowController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `t_shop` WHERE ( shop_name='闪电特攻' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_tasting` [ RunTime:0.0079s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'tasting_auth=1 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `t_tasting` WHERE ( tasting_shop_name='闪电特攻'and tasting_datetime >='2016-07-18 18:58:11'and tasting_datetime <'2016-07-25 00:00:00'tasting_auth=1 ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'tasting_auth=1 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `t_tasting` WHERE ( tasting_shop_name='闪电特攻'and tasting_datetime >='2016-07-18 18:58:11'and tasting_datetime <'2016-07-25 00:00:00'tasting_auth=1 ) 
+
+[ 2016-07-18T18:58:33+08:00 ] ::1 /Tickets/Index.php/Show/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+NOTIC: [8] Use of undefined constant GPC - assumed 'GPC' C:\wamp\www\Tickets\Application\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: tody C:\wamp\www\Tickets\Application\Home\Controller\ShowController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `t_shop` WHERE ( shop_name='闪电特攻' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_tasting` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `t_tasting` WHERE ( tasting_shop_name='闪电特攻'and tasting_datetime >='2016-07-18 18:58:33'and tasting_datetime <'2016-07-25 00:00:00' )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: marray C:\wamp\www\Tickets\Application\Home\Common\function.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_tasting` WHERE ( tasting_shop_name='闪电特攻' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.188196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.188318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002590s ]
+
+[ 2016-07-18T18:58:33+08:00 ] ::1 /Tickets/Index.php/Show/resources/images/closelabel.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000901s ]
+
+[ 2016-07-18T18:58:33+08:00 ] ::1 /Tickets/Index.php/Show/resources/images/loading.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000888s ]
+
+[ 2016-07-18T18:58:33+08:00 ] ::1 /Tickets/Application/Home/Common/Resources/images/icons/weblogo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+
+[ 2016-07-18T18:59:01+08:00 ] ::1 /Tickets/Index.php/Show/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+NOTIC: [8] Use of undefined constant GPC - assumed 'GPC' C:\wamp\www\Tickets\Application\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: tody C:\wamp\www\Tickets\Application\Home\Controller\ShowController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `t_shop` WHERE ( shop_name='闪电特攻' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_tasting` [ RunTime:0.0102s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'tasting_auth=1 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `t_tasting` WHERE ( tasting_shop_name='闪电特攻'and tasting_datetime >='2016-07-18 18:59:01'and tasting_datetime <'2016-07-25 00:00:00'tasting_auth=1 ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'tasting_auth=1 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `t_tasting` WHERE ( tasting_shop_name='闪电特攻'and tasting_datetime >='2016-07-18 18:59:01'and tasting_datetime <'2016-07-25 00:00:00'tasting_auth=1 ) 
+
+[ 2016-07-18T18:59:23+08:00 ] ::1 /Tickets/Index.php/Show/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+NOTIC: [8] Use of undefined constant GPC - assumed 'GPC' C:\wamp\www\Tickets\Application\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: tody C:\wamp\www\Tickets\Application\Home\Controller\ShowController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `t_shop` WHERE ( shop_name='闪电特攻' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_tasting` [ RunTime:0.0090s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'tasting_auth='1' )' at line 1
+ [ SQL语句 ] : SELECT * FROM `t_tasting` WHERE ( tasting_shop_name='闪电特攻'and tasting_datetime >='2016-07-18 18:59:23'and tasting_datetime <'2016-07-25 00:00:00'tasting_auth='1' ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'tasting_auth='1' )' at line 1
+ [ SQL语句 ] : SELECT * FROM `t_tasting` WHERE ( tasting_shop_name='闪电特攻'and tasting_datetime >='2016-07-18 18:59:23'and tasting_datetime <'2016-07-25 00:00:00'tasting_auth='1' ) 
+
+[ 2016-07-18T18:59:59+08:00 ] ::1 /Tickets/Index.php/Show/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+NOTIC: [8] Use of undefined constant GPC - assumed 'GPC' C:\wamp\www\Tickets\Application\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: tody C:\wamp\www\Tickets\Application\Home\Controller\ShowController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `t_shop` WHERE ( shop_name='闪电特攻' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_tasting` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `t_tasting` WHERE ( tasting_shop_name='闪电特攻'and tasting_datetime >='2016-07-18 18:59:58'and tasting_datetime <'2016-07-25 00:00:00'and tasting_auth=1 )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: marray C:\wamp\www\Tickets\Application\Home\Common\function.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_tasting` WHERE ( tasting_shop_name='闪电特攻' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000416s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.186152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.186273s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002341s ]
+
+[ 2016-07-18T18:59:59+08:00 ] ::1 /Tickets/Index.php/Show/resources/images/loading.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+
+[ 2016-07-18T18:59:59+08:00 ] ::1 /Tickets/Index.php/Show/resources/images/closelabel.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
+
+[ 2016-07-18T19:00:07+08:00 ] ::1 /Tickets/Index.php/Show/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+NOTIC: [8] Use of undefined constant GPC - assumed 'GPC' C:\wamp\www\Tickets\Application\Common\Common\function.php 第 43 行.
+NOTIC: [8] Undefined variable: tody C:\wamp\www\Tickets\Application\Home\Controller\ShowController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `t_shop` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `t_shop` WHERE ( shop_name='闪电特攻' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_tasting` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `t_tasting` WHERE ( tasting_shop_name='闪电特攻'and tasting_datetime >='2016-07-18 19:00:06'and tasting_datetime <'2016-07-25 00:00:00'and tasting_auth=1 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: marray C:\wamp\www\Tickets\Application\Home\Common\function.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_tasting` WHERE ( tasting_shop_name='闪电特攻' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.163322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.163494s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002587s ]
+
+[ 2016-07-18T19:00:07+08:00 ] ::1 /Tickets/Index.php/Show/resources/images/loading.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+
+[ 2016-07-18T19:00:07+08:00 ] ::1 /Tickets/Index.php/Show/resources/images/closelabel.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000930s ]
+

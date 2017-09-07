@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.containner {
+	background-color: #BBB;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	font-size: 1em;
+}
+.merchant {
+	height: 40%;
+	background-color: #FFF;
+}
+.merchantPhoto {
+	height: 70%;
+}
+.merchantPhoto img {
+	height: 100%;
+	width: 100%;
+}
+.merchantInfo {
+	height: 30%;
+	font-size: 3em;
+}
+.purchase {
+	height: 20%;
+	background-color: #FFF;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
+.purchase button {
+	width: 80%;
+	height: 35%;
+	font-size: 3em;
+	background-color: #FC3;
+	display: block;
+	margin: 0 auto;
+}
+.purchase p {
+	font-size: 2.5em;
+	text-align: center;
+	margin-top: 50px;
+}
+.coupon {
+	height: 40%;
+	font-size: 3em;
+	background-color: #FFF;
+}
+.coupon .couponInfo {
+	height: 200px;
+	background-color: #FFF;
+	border-top: solid 5px #333;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>品鉴会售票</title>
+<!--                       CSS                       -->
+<link rel="shortcut icon" href="__ROOT__/Application/Home/Common/Resources/images/icons/weblogo.jpg" />
+<!-- Reset Stylesheet -->
+<link rel="stylesheet" href="__ROOT__/Application/Home/Common/Resources/css/reset.css" type="text/css" media="screen" />
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="__ROOT__/Application/Home/Common/Resources/css/style.css" type="text/css" media="screen" />
+<!-- Invalid Stylesheet. This makes stuff look pretty. Remove it if you want the CSS completely valid -->
+<link rel="stylesheet" href="__ROOT__/Application/Home/Common/Resources/css/invalid.css" type="text/css" media="screen" />
+<!--                       Javascripts                       -->
+<!-- jQuery -->
+<script type="text/javascript" src="__ROOT__/Application/Home/Common/Resources/scripts/jquery-1.3.2.min.js"></script>
+<!-- jQuery Configuration -->
+<script type="text/javascript" src="__ROOT__/Application/Home/Common/Resources/scripts/simpla.jquery.configuration.js"></script>
+<!-- Facebox jQuery Plugin -->
+<script type="text/javascript" src="__ROOT__/Application/Home/Common/Resources/scripts/facebox.js"></script>
+<!-- jQuery WYSIWYG Plugin -->
+<script type="text/javascript" src="__ROOT__/Application/Home/Common/Resources/scripts/jquery.wysiwyg.js"></script>
+<!-- jQuery Datepicker Plugin -->
+<script type="text/javascript" src="__ROOT__/Application/Home/Common/Resources/scripts/jquery.datePicker.js"></script>
+<script type="text/javascript" src="__ROOT__/Application/Home/Common/Resources/scripts/jquery.date.js"></script>
+</head>
+<body>
+<div id="body-wrapper">
+  <!-- Wrapper for the radial gradient background -->
+<include file="Public:leftside"/>
+  <div id="main-content">
+    <!-- Main Content Section with everything -->
+    <noscript>
+    <!-- Show a notification if the user has disabled javascript -->
+    <div class="notification error png_bg">
+      <div> Javascript is disabled or is not supported by your browser. Please <a href="http://browsehappy.com/" title="Upgrade to a better browser">upgrade</a> your browser or <a href="http://www.google.com/support/bin/answer.py?answer=23852" title="Enable Javascript in your browser">enable</a> Javascript to navigate the interface properly.
+        Download From <a href="http://www.exet.tk">exet.tk</a></div>
+    </div>
+    </noscript>
+    <!-- Page Head -->
+    <h2>未来一周内品鉴会列表</h2>
+    <p id="page-intro">What would you like to do?</p>
+    <!-- End .shortcut-buttons-set -->
+    <div class="clear"></div>
+    <!-- End .clear -->
+    <div class="content-box">
+      <!-- Start Content Box -->
+      <div class="content-box-header">
+        <h3><{$shop.shop_name}></h3>
+        <h3>每场人数：<{$shop.shop_limit}> 人</h3>
+        <div class="clear"></div>
+      </div>
+      <!-- End .content-box-header -->
+      <div class="content-box-content">
+        <div class="tab-content default-tab" id="tab1">
+          <!-- This is the target div. id must match the href of this div's tab -->
+           <table border="1">
+            <thead>
+              <tr>
+                <th>日 期</th>
+                <th>星 期</th>
+                 <volist name='timepoint' id='vo'>
+                <th><{:substr($vo,0,5)}></th>
+                </volist>
+              </tr>
+            </thead>
+           <tbody>
+      
+              <tr>       
+                <td><{$date.date.0}></td>               
+                <td>星期<{$date.week.0}> </td>
+                <volist name="data['0']" id='vo'>
+              		<if condition="$vo['tasting_count'] eq '无' ">
+              			<td><{$vo.tasting_count}></td>
+              		<elseif condition="$vo['tasting_count'] eq $shop['shop_limit']"/><td><font color="red"><{$vo.tasting_count}></font></td>
+              		<elseif condition="$vo['tasting_count'] eq $shop['shop_limit']" /> <font color="red"><{$vo.tasting_count}></font>
+					<else /> <td><a href="<{:U('BuyTickets/buyTickets',array('tasting_id'=>$vo['tasting_id']))}>" onclick="return confirm('是否确认购买？');"><{$vo.tasting_count}></a> </td>
+					</if>
+                </volist>
+              </tr>   
+              <tr>       
+                <td><{$date.date.1}></td>               
+                <td>星期<{$date.week.1}> </td>
+                <volist name="data['1']" id='vo'>
+                    <if condition="$vo['tasting_count'] eq '无' ">
+              			<td><{$vo.tasting_count}></td>
+              		<elseif condition="$vo['tasting_count'] eq $shop['shop_limit']"/><td><font color="red"><{$vo.tasting_count}></font></td>
+					<else /> <td><a href="<{:U('BuyTickets/buyTickets',array('tasting_id'=>$vo['tasting_id']))}>" onclick="return confirm('是否确认购买？');"><{$vo.tasting_count}></a> </td>
+					</if>
+                </volist>
+              </tr>       
+              <tr>       
+                <td><{$date.date.2}></td>               
+                <td>星期<{$date.week.2}> </td>
+                 	<volist name="data['2']" id='vo'>
+                 			<if condition="$vo['tasting_count'] eq '无' ">
+              					<td><{$vo.tasting_count}></td>
+                            <elseif condition="$vo['tasting_count'] eq $shop['shop_limit']"/><td><font color="red"><{$vo.tasting_count}></font></td>          		
+							<else /> <td><a href="<{:U('BuyTickets/buyTickets',array('tasting_id'=>$vo['tasting_id']))}>" onclick="return confirm('是否确认购买？');"><{$vo.tasting_count}></a> </td>
+							</if>                
+                </volist>
+              </tr>       
+              <tr>       
+                <td><{$date.date.3}></td>               
+                <td>星期<{$date.week.3}> </td>
+                <volist name="data['3']" id='vo'>
+                	<if condition="$vo['tasting_count'] eq '无' ">
+              			<td><{$vo.tasting_count}></td>
+              		<elseif condition="$vo['tasting_count'] eq $shop['shop_limit']"/><td><font color="red"><{$vo.tasting_count}></font></td>
+					<else /> <td><a href="<{:U('BuyTickets/buyTickets',array('tasting_id'=>$vo['tasting_id']))}>" onclick="return confirm('是否确认购买？');"><{$vo.tasting_count}></a> </td>
+					</if>
+                </volist>
+              </tr>       
+              <tr>       
+                <td><{$date.date.4}></td>               
+                <td>星期<{$date.week.4}> </td>
+                 <volist name="data['4']" id='vo'>
+                	<if condition="$vo['tasting_count'] eq '无' ">
+              			<td><{$vo.tasting_count}></td>
+              		<elseif condition="$vo['tasting_count'] eq $shop['shop_limit']"/><td><font color="red"><{$vo.tasting_count}></font></td>
+					<else /> <td><a href="<{:U('BuyTickets/buyTickets',array('tasting_id'=>$vo['tasting_id']))}>" onclick="return confirm('是否确认购买？');"><{$vo.tasting_count}></a> </td>
+					</if>
+                </volist>
+              </tr>       
+              <tr>       
+                <td><{$date.date.5}></td>               
+                <td>星期<{$date.week.5}> </td>
+                 <volist name="data['5']" id='vo'>
+                	<if condition="$vo['tasting_count'] eq '无' ">
+              			<td><{$vo.tasting_count}></td>
+              		<elseif condition="$vo['tasting_count'] eq $shop['shop_limit']"/><td><font color="red"><{$vo.tasting_count}></font></td>
+					<else /> <td><a href="<{:U('BuyTickets/buyTickets',array('tasting_id'=>$vo['tasting_id']))}>" onclick="return confirm('是否确认购买？');"><{$vo.tasting_count}></a> </td>
+					</if>
+                </volist>
+              </tr>       
+              <tr>       
+                <td><{$date.date.6}></td>               
+                <td>星期<{$date.week.6}> </td>
+                 <volist name="data['6']" id='vo'>
+                	<if condition="$vo['tasting_count'] eq '无' ">
+              			<td><{$vo.tasting_count}></td>
+              		<elseif condition="$vo['tasting_count'] eq $shop['shop_limit']"/><td><font color="red"><{$vo.tasting_count}></font></td>
+					<else /> <td><a href="<{:U('BuyTickets/buyTickets',array('tasting_id'=>$vo['tasting_id']))}>" onclick="return confirm('是否确认购买？');"><{$vo.tasting_count}></a> </td>
+					</if>
+                </volist>
+              </tr>       
+              
+            </tbody>
+          </table>
+        </div>
+        <!-- End #tab1 -->
+      </div>
+      <!-- End .content-box-content -->
+    </div>
+    <!-- End .content-box -->
+    
+   
+    <!-- End .content-box -->
+    <div class="clear"></div>
+    <!-- End Notifications -->
+    <div id="footer"> <small>
+      <!-- Remove this notice or replace it with whatever you want -->
+      &#169; Copyright 2016 Your Company | <a href="#">联系我们</a> | <a href="#">Top</a> </small> </div>
+    <!-- End #footer -->
+  </div>
+  <!-- End #main-content -->
+</div>
+</body>
+<!-- Download From www.exet.tk-->
+</html>

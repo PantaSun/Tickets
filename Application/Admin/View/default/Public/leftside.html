@@ -1,0 +1,77 @@
+  <div id="sidebar">
+    <div id="sidebar-wrapper">
+      <!-- Sidebar with logo and menu -->
+      <h1 id="sidebar-title"><a href="#">管理</a></h1>
+      <!-- Logo (221px wide) -->
+      <!-- Sidebar Profile links -->
+      <div id="profile-links"> 
+        <br />
+        <a href="#" title="register"></a> 你好，超级管理员 <?php echo session('username');?></br> <a href="<{:U('Index/logout')}>" title="Sign Out">退 出</a> </div>
+      <ul id="main-nav">
+        <!-- Accordion Menu -->
+        
+        <li> <a href="#" class="nav-top-item current"> 品鉴会管理</a>
+          <ul>
+          	<li><a   href="<{:U('Tasting/allTasting')}>">所有品鉴会</a></li>
+          	<li><a href="<{:U('Tasting/addTasting')}>">添加单个品鉴会</a></li>
+          	<li><a href="<{:U('Tasting/addAllTasting')}>">批量添加连续品鉴会</a></li> 
+          	<li><a href="<{:U('Tasting/addAllShopTasting')}>">为所有门店添加品鉴会</a></li>  
+          	<li><a href="<{:U('Tasting/addPartShopTasting')}>">为部分门店添加品鉴会</a></li>               
+          </ul>
+        </li>
+        
+         <li> <a href="#" class="nav-top-item current"> 门店管理</a>
+          <ul>
+          	<li><a href="<{:U('Shop/allShop')}>">所有门店</a></li>
+          	<li><a href="<{:U('Shop/addShop')}>">添加门店</a></li>
+                         
+          </ul>
+        </li>
+        
+         <li> <a href="#" class="nav-top-item current ">
+          <!-- Add the class "current" to current menu item -->
+          销售员管理 </a>
+          <ul>
+           <li><a href="<{:U('User/allSalesman')}>">所有销售员信息</a></li>
+            <li><a href="<{:U('User/selectSalesman')}>">修改销售员信息</a></li>
+             <li><a href="<{:U('User/addSalesman')}>">添加销售员</a></li>
+          </ul>
+        </li>
+
+        <li> <a href="#" class="nav-top-item current"> 其他设置 </a>
+          <ul>
+            <li><a href="<{:U('Index/modifyPassword')}>">修改密码</a></li>
+            <li><a href="<{:U('Index/pushSMExcel')}>">下载销售信息</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- End #main-nav -->
+      <div id="messages" style="display: none">
+        <!-- Messages are shown when a link with these attributes are clicked: href="#messages" rel="modal"  -->
+        <h3>3 Messages</h3>
+        <p> <strong>17th May 2009</strong> by Admin<br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. <small><a href="#" class="remove-link" title="Remove message">Remove</a></small> </p>
+        <p> <strong>2nd May 2009</strong> by Jane Doe<br />
+          Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est. <small><a href="#" class="remove-link" title="Remove message">Remove</a></small> </p>
+        <p> <strong>25th April 2009</strong> by Admin<br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. <small><a href="#" class="remove-link" title="Remove message">Remove</a></small> </p>
+        <form action="#" method="post">
+          <h4>New Message</h4>
+          <fieldset>
+          <textarea class="textarea" name="textfield" cols="79" rows="5"></textarea>
+          </fieldset>
+          <fieldset>
+          <select name="dropdown" class="small-input">
+            <option value="option1">Send to...</option>
+            <option value="option2">Everyone</option>
+            <option value="option3">Admin</option>
+            <option value="option4">Jane Doe</option>
+          </select>
+          <input class="button" type="submit" value="Send" />
+          </fieldset>
+        </form>
+      </div>
+      <!-- End #messages -->
+    </div>
+  </div>
+  <!-- End #sidebar -->
